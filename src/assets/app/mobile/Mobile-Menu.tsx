@@ -1,7 +1,7 @@
 'use client'
 import { BurgerButton } from './Burger-Button';
 import styled from "styled-components";
-import SocialIcons from "../../../../../../progect/Portfolio/src/app/Container/SocialIcons/SocialIcons";
+import SocialIcons from "../conponents/Container/SocialIcons/SocialIcons.tsx";
 
 export const MobileMenu = () => {
   return (
