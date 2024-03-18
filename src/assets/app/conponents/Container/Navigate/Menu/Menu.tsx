@@ -1,28 +1,28 @@
 'use client'
-import {Links, ListItem, Mask, StyledMenu} from "./Menu.style";
+import * as SC from "./Menu.style";
 
 const menu = ['Projects', 'About', 'Digital Assets'];
 const Menu = () => {
   return (
-    <StyledMenu>
+    <SC.StyledMenu>
       <ul>
         {menu.map((item, index) => {
           return (
-            <ListItem key={index}>
-              <Links to={item} smooth duration={1000}>
+            <SC.ListItem key={index}>
+              <SC.Links to={item} smooth duration={1000}>
                 {item}
-                <Mask>
+                <SC.Mask>
                   <span>{item}</span>
-                </Mask>
-                <Mask>
+                </SC.Mask>
+                <SC.Mask>
                   <span>{item}</span>
-                </Mask>
-              </Links>
-            </ListItem>
+                </SC.Mask>
+              </SC.Links>
+            </SC.ListItem>
           );
         })}
       </ul>
-    </StyledMenu>
+    </SC.StyledMenu>
   );
 };
 export default Menu

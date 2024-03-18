@@ -1,11 +1,11 @@
 import {Link} from 'react-scroll';
 import {Logo} from "../../ui/Logo/Logo";
-import {ContactMe, InputStyle, LinksStyle, LinksWrapperStyle} from './Links.style';
+import * as SC from './Links.style';
 
 const Links = () => {
     return (
-        <LinksWrapperStyle>
-            <LinksStyle>
+        <SC.LinksWrapperStyle>
+            <SC.LinksStyle>
                 <Logo/>
                 <ul>
                     <li>
@@ -22,16 +22,16 @@ const Links = () => {
                         <a href={''}>Digital Assets</a>
                     </li>
                 </ul>
-            </LinksStyle>
-            <ContactMe>
+            </SC.LinksStyle>
+            <SC.ContactMe>
                 <h2>Subscribe to my emailing list</h2>
-                <InputStyle>
+                <SC.InputStyle>
                     <input type="email"/>
                     <button>Subscribe</button>
-                </InputStyle>
+                </SC.InputStyle>
                 <p>By subscribing you agree to with our Privacy Policy</p>
-            </ContactMe>
-        </LinksWrapperStyle>
+            </SC.ContactMe>
+        </SC.LinksWrapperStyle>
     );
 };
 

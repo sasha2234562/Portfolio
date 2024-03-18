@@ -2,9 +2,16 @@ import styled from "styled-components";
 import {font} from "../../../../styles/Common";
 
 export const SkillWrapper = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    transition: 0.7s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0.5em 0.5em -0.5em, 0.5em 0 0.5em -0.5em #FFFFFF;
+        transform: translateY(-0.25em);
+    }
 `;
 
 export const NumberSkill = styled.span`
@@ -44,4 +51,8 @@ export const AboutSkillStyle = styled.p`
      color: '#fff',
      family: 'Epilogue, sans-serif',
  })}
+`;
+export const TextWrapper = styled.div`
+    max-height: 180px;
+    overflow: hidden;
 `;

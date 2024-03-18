@@ -1,14 +1,14 @@
-import {ResumeWrapper} from "./Relume.style";
+import * as SC from "./Relume.style";
 import SocialIcons from "../SocialIcons/SocialIcons.tsx";
 
 const Relume = () => {
     return (
-        <ResumeWrapper>
+        <SC.ResumeWrapper>
             <p>
                 2022 Relume. <span>All right reserved.</span>
             </p>
             <SocialIcons />
-        </ResumeWrapper>
+        </SC.ResumeWrapper>
     );
 };
 

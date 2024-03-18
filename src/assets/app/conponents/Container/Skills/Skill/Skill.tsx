@@ -1,12 +1,8 @@
-import {AboutSkillStyle, NumberSkill, SkillWrapper, TitleStyle} from "./Skill.style";
+import * as SC from "./Skill.style";
 import ModalWindow from "../../../ui/ModalWindow/ModalWindow.tsx";
 import {FC, useState} from "react";
+import {SkillProps} from "./Skill.type.ts";
 
-interface SkillProps {
-    number: string;
-    title: string;
-    aboutSkill: string;
-};
 
 const Skill: FC<SkillProps> = ({aboutSkill, title, number}) => {
     const [active, setActive] = useState(false)
@@ -27,14 +23,14 @@ const Skill: FC<SkillProps> = ({aboutSkill, title, number}) => {
 
     return (
         <>
-            <SkillWrapper>
-                <NumberSkill>{number}.</NumberSkill>
-                <div style={{maxHeight: '180px', overflow: 'hidden'}} onClick={open}>
-                    <TitleStyle>{title}</TitleStyle>
-                    <AboutSkillStyle>{aboutSkill}</AboutSkillStyle>
-                </div>
-            </SkillWrapper>
-            <ModalWindow blur={blur} text={aboutSkill} active={active}/>
+            <SC.SkillWrapper>
+                <SC.NumberSkill>{number}.</SC.NumberSkill>
+                <SC.TextWrapper onClick={open}>
+                    <SC.TitleStyle>{title}</SC.TitleStyle>
+                    <SC.AboutSkillStyle>{aboutSkill}</SC.AboutSkillStyle>
+                </SC.TextWrapper>
+            </SC.SkillWrapper>
+            <ModalWindow title={title} blur={blur} text={aboutSkill} active={active}/>
         </>
     );
 };

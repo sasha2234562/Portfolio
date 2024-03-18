@@ -1,6 +1,4 @@
-'use client'
-
-import {AboutMe} from "./AboutMe/AboutMe";
+import AboutMe from "./AboutMe/AboutMe";
 import Main from "./Main/Main";
 import Links from "./Links/Links";
 import Line from "./Line/Line";

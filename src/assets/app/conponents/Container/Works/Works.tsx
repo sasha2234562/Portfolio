@@ -1,4 +1,4 @@
-import {WorksTitle, WorksWrapper} from "./Works.style.ts";
+import * as SC from "./Works.style.ts";
 import {Work} from "./Work/Work.tsx";
 import social from '../../../../images/social.jpg'
 import todo from '../../../../images/todo.jpg'
@@ -7,11 +7,11 @@ import team from '../../../../images/my-team.webp'
 
 export const Works = () => {
   return (
-    <WorksWrapper id="Projects">
-      <WorksTitle>
+    <SC.WorksWrapper id="Projects">
+      <SC.WorksTitle>
         MY
         <br /> PROJECTS
-      </WorksTitle>
+      </SC.WorksTitle>
       <Work
         background={`${social}`}
         title={'Friend-Net'}
@@ -59,6 +59,6 @@ export const Works = () => {
           'членах команды, их контактных данных, ролях и ответственностях.'
         }
       />
-    </WorksWrapper>
+    </SC.WorksWrapper>
   );
 };

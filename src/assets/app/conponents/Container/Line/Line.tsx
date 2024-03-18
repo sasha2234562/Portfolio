@@ -1,10 +1,10 @@
-import {LineStyle} from './Line.style'
+import * as SC from './Line.style'
 
 const Line = () => {
     return (
-        <LineStyle>
+        <SC.LineStyle>
             <hr />
-        </LineStyle>
+        </SC.LineStyle>
     );
 };
 

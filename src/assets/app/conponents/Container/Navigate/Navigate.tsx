@@ -1,12 +1,12 @@
 import Menu from "./Menu/Menu";
 import Talk from "../Talk/Talk";
-import { NavigateWrapper } from "./Navigate.style";
+import * as SC from "./Navigate.style";
 
 export const Navigate = () => {
   return (
-    <NavigateWrapper>
+    <SC.NavigateWrapper>
       <Menu />
       <Talk />
-    </NavigateWrapper>
+    </SC.NavigateWrapper>
   );
 };

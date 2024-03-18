@@ -1,24 +1,24 @@
 'use client';
 import {FlexWrapper} from "../../ui/FlexWraper/FlexWraper";
 import {Circle} from '../../ui/Circle/Circle';
-import {NameStyle, Photo, PhotoContainer, StyledMain, StyleTextBlock} from "./Main.style";
+import * as SC from "./Main.style";
 import photo from '../../../../images/photo_2023-12-17_13-26-22.jpg'
 
 const Main = () => {
     return (
-        <StyledMain>
+        <SC.StyledMain>
             <FlexWrapper align={'top'} justify={'space-around'}>
-                <StyleTextBlock>
-                    <NameStyle>
+                <SC.StyleTextBlock>
+                    <SC.NameStyle>
                         HELLO <br/> I’M Sasha
-                    </NameStyle>
+                    </SC.NameStyle>
                     <Circle/>
-                </StyleTextBlock>
-                <PhotoContainer>
-                    <Photo src={photo} alt="photo"/>
-                </PhotoContainer>
+                </SC.StyleTextBlock>
+                <SC.PhotoContainer>
+                    <SC.Photo src={photo} alt="photo"/>
+                </SC.PhotoContainer>
             </FlexWrapper>
-        </StyledMain>
+        </SC.StyledMain>
     );
 };
 

@@ -1,18 +1,6 @@
 import  { FC } from 'react';
-import {
-  BoxStyle,
-  PracticalStyle, RecommendationStyle,
-  TextWrapperStyle,
-  TitleStyle, WorkTextStyle,
-  WorkWrapper
-} from "./Work.style";
-
-interface WorkType {
-  text: string;
-  recommendation: string;
-  title: string;
-  background: string;
-}
+import * as SC from "./Work.style";
+import {WorkType} from "./Work.type.ts";
 
 export const Work: FC<WorkType> = ({
   text,
@@ -21,19 +9,19 @@ export const Work: FC<WorkType> = ({
   background,
 }) => {
   return (
-    <WorkWrapper
+    <SC.WorkWrapper
       style={{
         backgroundImage: `url(${background})`,
       }}
     >
-      <TextWrapperStyle>
-        <BoxStyle>
-          <TitleStyle>{title}</TitleStyle>
-          <PracticalStyle>A Case Study_</PracticalStyle>
-          <RecommendationStyle>{recommendation}</RecommendationStyle>
-        </BoxStyle>
-        <WorkTextStyle>{text}</WorkTextStyle>
-      </TextWrapperStyle>
-    </WorkWrapper>
+      <SC.TextWrapperStyle>
+        <SC.BoxStyle>
+          <SC.TitleStyle>{title}</SC.TitleStyle>
+          <SC.PracticalStyle>A Case Study_</SC.PracticalStyle>
+          <SC.RecommendationStyle>{recommendation}</SC.RecommendationStyle>
+        </SC.BoxStyle>
+        <SC.WorkTextStyle>{text}</SC.WorkTextStyle>
+      </SC.TextWrapperStyle>
+    </SC.WorkWrapper>
   );
 };

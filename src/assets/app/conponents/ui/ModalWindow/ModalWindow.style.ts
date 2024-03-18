@@ -1,10 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { theme } from "../../../styles/Theme.ts";
 import {font} from "../../../styles/Common.ts";
-
-export interface ContainerProps {
-    active: boolean;
-}
+import {ContainerProps} from "./ModalWindow.type.ts";
 
 const rotateAnimation = keyframes`
     0% {
@@ -46,6 +43,8 @@ export const Container = styled.div<ContainerProps>`
 export const TextWrapper = styled.div<ContainerProps>`
     background-color: ${theme.colors.primary};
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     color: ${theme.colors.secondary};
     position: relative;
     top: 50%;
@@ -77,4 +76,16 @@ export const Exit = styled.div`
     top: 0;
     background-color: silver;
     height: fit-content;
+`;
+export const Title = styled.h2`
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    ${font({
+        weight: 300,
+        Fmax: 30,
+        Fmin: 25,
+        color: `${theme.colors.secondary}`,
+        family: 'Epilogue, sans-serif',
+    })}
 `;
