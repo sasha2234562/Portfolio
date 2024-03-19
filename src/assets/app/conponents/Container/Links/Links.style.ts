@@ -3,9 +3,9 @@ import { theme } from "../../../styles/Theme";
 
 export const InputStyle = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   input {
-    padding: 12px;
+    padding: 0.75rem;
     align-items: center;
     flex: 1;
     border: 1px solid #000;
@@ -21,15 +21,15 @@ export const InputStyle = styled.div`
     line-height: 150%;
     border: 1px solid #000;
     display: flex;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
   }
-  // @media {theme.media.tablet} {
-  //   flex-direction: column;
-  //   width: 100%;
-  // }
+   @media ${theme.media.tablet} {
+     flex-direction: column;
+     width: 100%;
+   }
 `;
 export const LinksWrapperStyle = styled.section`
   display: flex;
@@ -38,26 +38,27 @@ export const LinksWrapperStyle = styled.section`
   align-items: center;
   margin: 80px auto;
    color: ${theme.colors.secondary};
-  // @media {theme.media.tablet} {
-  //   flex-direction: column;
-  //   align-items: start;
-  //   gap: 26px;
-  //   button {
-  //     width: 50%;
-  //   }
-  // }
+   @media ${theme.media.tablet} {
+     flex-direction: column;
+     align-items: start;
+     gap: 26px;
+     button {
+       width: 50%;
+     }
+   }
 `;
 export const ContactMe = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 12px;
+  gap: 0.75rem;
   a {
     width: 20px;
   }
-  // @media theme.media.tablet} {
-  //   width: 100%;
-  // }
+   @media ${theme.media.tablet} {
+     width: 100%;
+       margin-right: 1rem;
+   }
 `;
 export const LinksStyle = styled.div`
   ul {
