@@ -1,8 +1,9 @@
-'use client';
-import { BurgerButton } from "../../../mobile/Burger-Button";
 import * as SC from './Talk.style.ts'
+import {FC} from "react";
+import {MobileMenuProps} from "../../../mobile/MobileMenu/MobileMenu.tsx";
+import BurgerOpen from "../../../mobile/BurgerButton/BurgerOpen.tsx";
 
-const Talk = () => {
+const Talk:FC<MobileMenuProps>  = ({close}) => {
   return (
     <SC.ButtonWrapper>
       <SC.ButtonStyle>
@@ -15,7 +16,7 @@ const Talk = () => {
         </SC.Mask>
       </SC.ButtonStyle>
       <SC.BurgerWrapper>
-        <BurgerButton />
+          <BurgerOpen close={close}/>
       </SC.BurgerWrapper>
     </SC.ButtonWrapper>
   );

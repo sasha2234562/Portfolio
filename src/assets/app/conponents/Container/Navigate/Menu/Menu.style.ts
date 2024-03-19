@@ -1,13 +1,19 @@
 import {Link} from 'react-scroll';
 import styled from "styled-components";
+import {theme} from "../../../../styles/Theme.ts";
 
 export const StyledMenu = styled.nav`
-  ul {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
 
+    @media ${theme.media.tablet} {
+        ul {
+            display: none;
+        }
+    }
 `;
 
 export const Links = styled(Link)`
