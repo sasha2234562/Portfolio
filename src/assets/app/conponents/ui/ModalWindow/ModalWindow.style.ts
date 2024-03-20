@@ -29,7 +29,6 @@ const rotateAnimationOut = keyframes`
 export const Container = styled.div<ContainerProps>`
     display: flex;
     padding: 1rem;
-    border-radius: 1rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -55,7 +54,7 @@ export const TextWrapper = styled.div<ContainerProps>`
     width: 20%;
     z-index: 99999;
     height: fit-content;
-    animation: ${(props)=> props.active ? rotateAnimation : rotateAnimationOut} 2s linear forwards;
+    animation: ${(props)=> props.active ? rotateAnimation : rotateAnimationOut} 2.5s linear forwards;
     ${font({
         weight: 200,
         Fmax: 18,
@@ -76,6 +75,7 @@ export const Exit = styled.div`
     top: 0;
     background-color: silver;
     height: fit-content;
+    cursor: pointer;
 `;
 export const Title = styled.h2`
     font-style: normal;

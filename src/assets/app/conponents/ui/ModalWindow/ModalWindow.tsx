@@ -10,7 +10,7 @@ const ModalWindow: FC<ModalWindowProps> = ({text, title, active, blur}) => {
                 <SC.Title>{title}</SC.Title>
                 {text}
                 <SC.Exit onClick={blur}>
-                    <Icon IconId={'exit'} height={'24rem'} width={'24rem'}/>
+                    <Icon IconId={'exit'} height={'1.5rem'} width={'1.5rem'}/>
                 </SC.Exit>
             </SC.TextWrapper>
         </SC.Container>
