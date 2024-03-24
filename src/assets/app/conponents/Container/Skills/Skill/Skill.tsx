@@ -4,7 +4,7 @@ import {FC, useState} from "react";
 import {SkillProps} from "./Skill.type.ts";
 
 
-const Skill: FC<SkillProps> = ({aboutSkill, title, number}) => {
+const Skill: FC<SkillProps> = ({aboutSkill,logo, title, number}) => {
     const [active, setActive] = useState(false)
     const blur = () => {
         const rootElement = document.getElementById('root');
@@ -27,6 +27,7 @@ const Skill: FC<SkillProps> = ({aboutSkill, title, number}) => {
                 <SC.NumberSkill>{number}.</SC.NumberSkill>
                 <SC.TextWrapper onClick={open}>
                     <SC.TitleStyle>{title}</SC.TitleStyle>
+                    <img src={logo} alt="logo"/>
                     <SC.AboutSkillStyle>{aboutSkill}</SC.AboutSkillStyle>
                 </SC.TextWrapper>
             </SC.SkillWrapper>

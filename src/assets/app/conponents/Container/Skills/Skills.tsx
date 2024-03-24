@@ -1,10 +1,17 @@
 import * as  SC from "./Skills.style.ts";
 import Skill from "./Skill/Skill.tsx";
+import react from "../../../../images/logo-react.svg";
+import js from "../../../../images/js.svg";
+import ts from "../../../../images/typescript.svg";
+import next from "../../../../images/next-js.svg";
+import redux from "../../../../images/redux.svg";
+import api from "../../../../images/api.svg";
 
 const Skills = () => {
     return (
         <SC.SkillsWrapperStyle>
             <Skill
+                logo={js}
                 number={'1'}
                 title={'JavaScript'}
                 aboutSkill={
@@ -16,6 +23,7 @@ const Skills = () => {
                 }
             />
             <Skill
+                logo={ts}
                 number={'2'}
                 title={'TypeScript'}
                 aboutSkill={
@@ -28,6 +36,7 @@ const Skills = () => {
                 }
             />
             <Skill
+                logo={react}
                 number={'3'}
                 title={'React'}
                 aboutSkill={
@@ -40,6 +49,7 @@ const Skills = () => {
                 }
             />
             <Skill
+                logo={next}
                 number={'4'}
                 title={'Next.js'}
                 aboutSkill={
@@ -52,6 +62,7 @@ const Skills = () => {
                 }
             />
             <Skill
+                logo={redux}
                 number={'5'}
                 title={'Redux'}
                 aboutSkill={
@@ -62,6 +73,7 @@ const Skills = () => {
                 }
             />
             <Skill
+                logo={api}
                 number={'6'}
                 title={'Rest API'}
                 aboutSkill={
