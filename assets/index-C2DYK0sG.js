@@ -469,6 +469,7 @@ font-size: calc( (100vw - 360px)/(1440 - 360) * (${o} - ${i}) + ${i}px);
     display: flex;
     align-items: flex-start;
     gap: 8px;
+    padding: 1rem;
     transition: 0.7s;
     cursor: pointer;
 
