@@ -21,7 +21,6 @@ const SocialIcons = () => {
                 rel="noreferrer"
             >
                 <img src={github} alt={'git-icon'} width={20} height={20}/>
-                {/*<Icon IconId={'git'} height={'20px'} width={'20px'} />*/}
             </a>
             <a
                 href="https://www.linkedin.com/in/alexander-kalitsenia-008271296/"

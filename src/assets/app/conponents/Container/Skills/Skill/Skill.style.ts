@@ -5,6 +5,7 @@ export const SkillWrapper = styled.div`
     display: flex;
     align-items: flex-start;
     gap: 8px;
+    padding: 1rem;
     transition: 0.7s;
     cursor: pointer;
 
