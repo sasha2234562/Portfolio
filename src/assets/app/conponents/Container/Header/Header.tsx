@@ -7,7 +7,11 @@ import {useState} from "react";
 
 const Header = () => {
     const [activeMobileMenu, setActiveMobileMenu] = useState(false)
-    const close = ()=> setActiveMobileMenu(!activeMobileMenu)
+    const close = ()=> {
+        setActiveMobileMenu(!activeMobileMenu)
+        document.body.style.overflow = activeMobileMenu ? 'auto' : 'hidden';
+
+    }
     return (
         <SC.Container>
             <SC.StyledHeader>

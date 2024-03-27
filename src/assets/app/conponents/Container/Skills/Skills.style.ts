@@ -8,5 +8,4 @@ export const SkillsWrapperStyle = styled.section`
   gap: 59px 8px;
   margin-top: 106px;
   word-wrap: break-word;
-
 `;

@@ -4,21 +4,15 @@ import {FC, useState} from "react";
 import {SkillProps} from "./Skill.type.ts";
 
 
-const Skill: FC<SkillProps> = ({aboutSkill,logo, title, number}) => {
+const Skill: FC<SkillProps> = ({aboutSkill, logo, title, number}) => {
     const [active, setActive] = useState(false)
     const blur = () => {
-        const rootElement = document.getElementById('root');
-        if (rootElement) {
-            setActive(false)
-            rootElement.style.overflow = 'auto';
-        }
+        document.body.style.overflow = 'auto';
+        setActive(false);
     }
     const open = () => {
-        const rootElement = document.getElementById('root');
-        if (rootElement) {
-            rootElement.style.overflow = 'hidden';
-            setActive(true)
-        }
+        document.body.style.overflow = 'hidden';
+        setActive(true)
     }
 
     return (
