@@ -43,15 +43,18 @@ export const StyledMain = styled.section`
     @media (max-width: 960px) {
         div {
             flex-direction: column;
+            gap: 1rem;
             justify-content: center;
             margin: auto;
         }
     }
 `;
 export const StyleTextBlock = styled.div`
-    z-index: 1;
     white-space: nowrap;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
     @media (max-width: 960px) {
         left: 0;
     }
@@ -62,4 +65,10 @@ export const NameStyle = styled.span`
     line-height: 117.5%;
     text-align: left;
     max-width: 650px;
+`;
+export const Post = styled.span`
+    ${font({Fmax: 50, Fmin: 28, weight: 800})}
+    line-height: 53px;
+    letter-spacing: 0;
+    text-align: left;
 `;

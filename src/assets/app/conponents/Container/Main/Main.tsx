@@ -1,6 +1,5 @@
 'use client';
 import {FlexWrapper} from "../../ui/FlexWraper/FlexWraper";
-import {Circle} from '../../ui/Circle/Circle';
 import * as SC from "./Main.style";
 import photo from '../../../../images/photo_2023-12-17_13-26-22.jpg'
 
@@ -12,7 +11,7 @@ const Main = () => {
                     <SC.NameStyle>
                         HELLO <br/> I’M Sasha
                     </SC.NameStyle>
-                    <Circle/>
+                    <SC.Post>Frontend Developer</SC.Post>
                 </SC.StyleTextBlock>
                 <SC.PhotoContainer>
                     <SC.Photo src={photo} alt="photo"/>
