@@ -1,8 +1,7 @@
 import {FC} from "react";
 import * as SC from "./ModalWindow.style.ts";
-import Icon from "../Icon/Icon.tsx";
 import {ModalWindowProps} from "./ModalWindow.type.ts";
-
+import Icon from "../Icon/Icon.tsx";
 const ModalWindow: FC<ModalWindowProps> = ({text, title, active, blur}) => {
     return (
         <SC.Container active={active}>
@@ -10,7 +9,7 @@ const ModalWindow: FC<ModalWindowProps> = ({text, title, active, blur}) => {
                 <SC.Title>{title}</SC.Title>
                 {text}
                 <SC.Exit onClick={blur}>
-                    <Icon IconId={'exit'} height={'1.5rem'} width={'1.5rem'}/>
+                    <Icon IconId={'exit'} height={'24px'} width={'24px'}/>
                 </SC.Exit>
             </SC.TextWrapper>
         </SC.Container>

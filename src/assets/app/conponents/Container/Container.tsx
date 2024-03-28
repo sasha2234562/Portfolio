@@ -6,7 +6,7 @@ import Relume from "./Relume/Relume";
 import Header from "./Header/Header";
 import {ContainerStyle} from "./Container.style.ts";
 import Skills from "./Skills/Skills.tsx";
-import {Works} from "./Works/Works.tsx";
+import Works from "./Works/Works.tsx";
 
 const Container = () => {
 

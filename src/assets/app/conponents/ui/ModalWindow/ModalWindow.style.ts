@@ -54,14 +54,22 @@ export const TextWrapper = styled.div<ContainerProps>`
     width: 20%;
     z-index: 99999;
     height: fit-content;
-    animation: ${(props)=> props.active ? rotateAnimation : rotateAnimationOut} 2.5s linear forwards;
+    animation: ${(props) => props.active ? rotateAnimation : rotateAnimationOut} 2.5s linear forwards;
     ${font({
         weight: 200,
         Fmax: 18,
         Fmin: 14,
         color: `${theme.colors.secondary}`,
         family: 'Epilogue, sans-serif',
-    })}
+    })};
+    scrollbar-color: transparent transparent;
+    @media (max-width: 900px) {
+        top: 20%;
+        height: 200px;
+        overflow: scroll;
+        width: 60%;
+        
+    }
 `;
 
 export const Exit = styled.div`
@@ -76,6 +84,10 @@ export const Exit = styled.div`
     background-color: silver;
     height: fit-content;
     cursor: pointer;
+    @media (max-width: 900px) {
+        right: 1rem;
+        top: 1rem;
+    }
 `;
 export const Title = styled.h2`
     font-style: normal;
@@ -87,5 +99,5 @@ export const Title = styled.h2`
         Fmin: 25,
         color: `${theme.colors.secondary}`,
         family: 'Epilogue, sans-serif',
-    })}
+    })};
 `;

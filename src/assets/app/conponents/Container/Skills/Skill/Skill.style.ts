@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import {font} from "../../../../styles/Common";
+import {Link} from 'react-scroll';
 
-export const SkillWrapper = styled.div`
+
+export const SkillWrapper = styled(Link)`
     display: flex;
     align-items: flex-start;
     gap: 8px;
@@ -10,7 +12,7 @@ export const SkillWrapper = styled.div`
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 0.5em 0.5em -0.5em, 0.5em 0 0.5em -0.5em #FFFFFF;
+        box-shadow: 1px 1px 1rem #FFFFFF;
         transform: translateY(-0.25em);
     }
 `;

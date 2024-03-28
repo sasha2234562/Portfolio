@@ -9,7 +9,7 @@ import api from "../../../../images/api.svg";
 
 const Skills = () => {
     return (
-        <SC.SkillsWrapperStyle>
+        <SC.SkillsWrapperStyle id="Skills">
             <Skill
                 logo={js}
                 number={'1'}
