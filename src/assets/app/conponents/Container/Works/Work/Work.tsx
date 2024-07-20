@@ -15,7 +15,9 @@ const Work: FC<WorkType> = ({
                 <SC.BackgroundImage src={background} alt={''}/>
                 <SC.TitleStyle>{title}</SC.TitleStyle>
             </SC.Front>
-            <SC.Back><SC.WorkTextStyle>{text}</SC.WorkTextStyle></SC.Back>
+            <SC.Back>
+                <SC.WorkTextStyle>{text}</SC.WorkTextStyle>
+            </SC.Back>
         </SC.Card>
     </SC.WorkWrapper>
   );

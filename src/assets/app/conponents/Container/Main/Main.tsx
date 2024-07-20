@@ -1,4 +1,3 @@
-'use client';
 import {FlexWrapper} from "../../ui/FlexWraper/FlexWraper";
 import * as SC from "./Main.style";
 import photo from '../../../../images/photo_2023-12-17_13-26-22.jpg'
