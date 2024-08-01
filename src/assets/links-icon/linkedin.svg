@@ -1,0 +1,14 @@
+<svg width="37.737549" height="37.736694" viewBox="0 0 37.7375 37.7367" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="0.000000" y1="18.868252" x2="37.736504" y2="18.868252" id="paint_linear_1_2995_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#00F5A0"/>
+			<stop offset="1.000000" stop-color="#00D9F5"/>
+		</linearGradient>
+	</defs>
+	<rect rx="-0.413075" width="36.910355" height="36.910355" transform="translate(0.414051 0.413319)" fill="#FFFFFF" fill-opacity="0"/>
+	<ellipse cx="18.868164" cy="18.868286" rx="18.868252" ry="18.868254" fill="url(#paint_linear_1_2995_0)" fill-opacity="1.000000"/>
+	<path d="M9.57 28.7L13.52 28.7L13.52 14.09L9.57 14.09L9.57 28.7ZM11.55 7.64C10.23 7.64 9.18 8.7 9.18 10.01C9.18 11.33 10.23 12.38 11.55 12.38C12.86 12.38 13.92 11.33 13.92 10.01C13.92 8.7 12.86 7.64 11.55 7.64ZM20.23 16.33L20.23 14.09L16.29 14.09L16.29 28.7L20.23 28.7L20.23 21.2C20.23 16.99 25.63 16.72 25.63 21.2L25.63 28.7L29.58 28.7L29.58 19.75C29.58 12.65 22.08 12.91 20.23 16.33Z" fill="#1F2626" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>

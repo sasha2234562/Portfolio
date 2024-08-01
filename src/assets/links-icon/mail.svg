@@ -1,0 +1,19 @@
+<svg width="37.736572" height="37.736450" viewBox="0 0 37.7366 37.7365" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_2988">
+			<rect id="cib:gmail" rx="-0.262059" width="23.061197" height="23.061197" transform="translate(7.337499 7.337743)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="0.000000" y1="18.868252" x2="37.736504" y2="18.868252" id="paint_linear_1_2987_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#00F5A0"/>
+			<stop offset="1.000000" stop-color="#00D9F5"/>
+		</linearGradient>
+	</defs>
+	<circle id="Ellipse 2" cx="18.868164" cy="18.868286" r="18.868252" fill="url(#paint_linear_1_2987_0)" fill-opacity="1.000000"/>
+	<rect id="cib:gmail" rx="-0.262059" width="23.061197" height="23.061197" transform="translate(7.337499 7.337743)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_2988)">
+		<path id="Vector" d="M30.66 11.49L30.66 26.23C30.66 27.07 30.02 27.71 29.18 27.71L27.71 27.71L27.71 14.33L18.86 20.68L10.02 14.33L10.02 27.71L8.54 27.71C7.71 27.71 7.07 27.07 7.07 26.23L7.07 11.49C7.07 11.07 7.23 10.71 7.49 10.44C7.63 10.31 7.8 10.2 7.98 10.12C8.16 10.05 8.35 10.02 8.54 10.02L9.04 10.02L18.86 17.14L28.69 10.02L29.18 10.02C29.6 10.02 29.97 10.18 30.23 10.44C30.5 10.71 30.66 11.07 30.66 11.49Z" fill="#1F2626" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
