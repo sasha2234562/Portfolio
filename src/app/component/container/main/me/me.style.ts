@@ -4,6 +4,10 @@ export const MeContainer = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        gap: 30px;
+    }
 `;
 export const MeTextContent = styled.div`
     display: flex;
@@ -30,7 +34,7 @@ export const Profession = styled.h1`
     letter-spacing: 0;
     text-align: left;
 `;
-export const MeDescription  = styled.p`
+export const MeDescription = styled.p`
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 4%;

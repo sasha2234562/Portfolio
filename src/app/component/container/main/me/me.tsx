@@ -6,8 +6,8 @@ export const Me = () => {
     return (
         <SC.MeContainer>
             <SC.MeTextContent>
-                <SC.Profession>WEB DEVELOPER</SC.Profession>
-                <SC.Name>John Doe</SC.Name>
+                <SC.Profession>ФРОНТЕНД РАЗРАБОТЧИК</SC.Profession>
+                <SC.Name>Саша Калитеня</SC.Name>
                 <SC.MeDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                     Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.
                 </SC.MeDescription>

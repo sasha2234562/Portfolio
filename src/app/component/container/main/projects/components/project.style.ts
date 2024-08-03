@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
 
 export const ProjectLogo = styled.img`
-    //width: 522px;
-    //height: 388px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 `
 export const TitleProject = styled.h3`
     font-size: 20px;
@@ -47,4 +49,5 @@ export const TextContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding: 16px;
 `

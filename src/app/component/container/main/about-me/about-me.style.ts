@@ -12,7 +12,7 @@ export const AboutMeText = styled.p`
     text-align: left;
 `
 export const Line = styled.span`
-    width: 6px;
-    border-radius: 2px;
+    width: 60px;
+    border-radius: 4px;
     background: var(--button-background);
 `

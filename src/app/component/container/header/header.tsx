@@ -4,10 +4,10 @@ import {Button} from "../../ui";
 export const Header = () => {
     return (
         <SC.Nav>
-            <SC.Link>Home</SC.Link>
+            <SC.Link>Главная</SC.Link>
             <SC.NavButtonWrapper>
-                <SC.Link>Projects</SC.Link>
-                <Button title={'Contact'}/>
+                <SC.Link>Проекты</SC.Link>
+                <Button title={'Контакты'}/>
             </SC.NavButtonWrapper>
         </SC.Nav>
     );

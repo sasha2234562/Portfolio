@@ -7,7 +7,7 @@ import {Textarea} from "../../../ui/textarea/textarea.tsx";
 export const ContactWithMe = () => {
     return (
         <Section>
-            <SectionTitle title={'Contacts'}/>
+            <SectionTitle title={'Контакты'}/>
             <SC.InputContainer>
                 <Input label={'Name'}/>
                 <Input label={'Email'}/>
