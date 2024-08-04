@@ -25,24 +25,6 @@ export const Name = styled.h2`
     letter-spacing: 0;
     text-align: left;
 `
-export const Profession = styled.h1`
-    color: var(--color-light);
-    font-family: Tinos, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0;
-    text-align: left;
-`;
-export const MeDescription = styled.p`
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 4%;
-    text-align: left;
-`
-export const ButtonAbout = {
-    width: '134px'
-}
 export const Avatar = styled.img`
     width: 416px;
 `;

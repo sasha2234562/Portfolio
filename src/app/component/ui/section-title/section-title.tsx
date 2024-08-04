@@ -3,10 +3,11 @@ import {FC} from "react";
 
 interface SectionTitleInterface {
     title: string
+    id: string
 }
 
-export const SectionTitle: FC<SectionTitleInterface> = ({title}) => {
+export const SectionTitle: FC<SectionTitleInterface> = ({title, id}) => {
     return (
-        <SC.Title>{title}</SC.Title>
+        <SC.Title id={id}>{title}</SC.Title>
     );
 };

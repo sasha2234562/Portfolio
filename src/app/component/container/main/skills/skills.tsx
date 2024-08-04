@@ -13,7 +13,7 @@ import {Skill} from "./component/skill/skill.tsx";
 export const Skills = () => {
     return (
         <Section>
-            <SectionTitle title={'Навыки'}/>
+            <SectionTitle id={'skills'} title={'Навыки'}/>
             <SC.SkillsWrapper>
                 <Skill title={'Java Script'} logo={javascript as string}/>
                 <Skill title={'Type Script'} logo={typeScript as string}/>

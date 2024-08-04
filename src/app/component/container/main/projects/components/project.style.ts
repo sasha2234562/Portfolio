@@ -1,5 +1,22 @@
 import styled from "@emotion/styled";
 
+export const Link = styled.a`
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--color-light);
+    padding: 8px;
+    border-radius: 6px;
+    color: var(--color-dark);
+    transition: 0.7s;
+    &:hover{
+        color: var(--color-light);
+        background-color: var(--background);
+    }
+`
 export const ProjectLogo = styled.img`
     object-fit: cover;
     aspect-ratio: 16 / 9;
@@ -44,6 +61,7 @@ export const Container = styled.div`
     gap: 30px;
     border-radius: 6px;
     background: rgb(34, 37, 37);
+    position: relative;
 `
 export const TextContentWrapper = styled.div`
     display: flex;

@@ -1,5 +1,5 @@
 import * as SC from './projects.style.ts'
-import project from '../../../../../assets/project.png'
+import action from '../../../../../assets/projects/actions-list.png'
 import team from '../../../../../assets/projects/team.jpg'
 import sporder from '../../../../../assets/projects/sporder.png'
 import {SectionTitle} from "../../../ui";
@@ -9,24 +9,26 @@ import {Section} from "../../../ui";
 export const Projects = () => {
     return (
         <Section>
-            <SectionTitle title={'Проекты'}/>
+            <SectionTitle title={'Проекты'} id={'projects'}/>
             <SC.ProjectsWrapper>
-                <Project titleProject={'Sporder.by'} logo={sporder as string}
+                <Project link={'https://sporder.by/'} titleProject={'Sporder.by'} logo={sporder as string}
                          instrument={['TypeScript', 'React', 'Redux', 'React Hook Form', 'Axios', 'React-Router-Dom', 'Emotion',]}
                          description={'Проект Sporder.by создан специально для того, чтобы упростить вам поиск и ' +
                              'бронирование спортивных объектов в Беларуси.'}/>
-                <Project titleProject={'My team'} logo={team as string}
+                <Project link={'https://sasha2234562.github.io/my-team'} titleProject={'My team'} logo={team as string}
                          instrument={['TypeScript', 'React', 'Redux', 'Axios', 'Formik', 'React-Router-Dom']}
-                         description={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat\n' +
-                             '                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}/>
-                <Project titleProject={'TITLE PROJECT'} logo={project as string}
-                         instrument={['Javascript', 'Javascript', 'Javascript', 'Javascript',]}
-                         description={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat\n' +
-                             '                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}/>
-                <Project titleProject={'TITLE PROJECT'} logo={project as string}
-                         instrument={['Javascript', 'Javascript', 'Javascript', 'Javascript',]}
-                         description={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat\n' +
-                             '                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}/>
+                         description={'My-Team - это удобное приложение со списком команд, которое предоставляет вам всю ' +
+                             'необходимую информацию о вашей команде на одной платформе. ' +
+                             'В приложении My-Team вы можете увидеть список всех команд, в которых вы состоите или' +
+                             ' которыми управляете. Каждая команда имеет свой профиль, где вы найдете информацию о ' +
+                             'членах команды, их контактных данных, ролях и ответственностях.'}/>
+                <Project link={'https://sasha2234562.github.io/Action-List'} titleProject={'Action-List'} logo={action as string}
+                         instrument={['TypeScript', 'React', 'Redux', 'Axios', 'Formik', 'React-Router-Dom']}
+                         description={'Action-List - это мощное приложение для управления задачами, которое помогает отдельным ' +
+                             'пользователям и командам быть организованными, сосредоточенными и продуктивными. ' +
+                             'Благодаря интуитивному интерфейсу и обширному набору функций, Action-List предоставляет ' +
+                             'простой и эффективный способ управлять задачами и достигать целей.\n' +
+                             '\n'}/>
             </SC.ProjectsWrapper>
         </Section>
     );
