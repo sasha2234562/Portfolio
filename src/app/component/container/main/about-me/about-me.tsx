@@ -5,9 +5,9 @@ import {Section} from "../../../ui";
 export const AboutMe = () => {
     return (
         <Section>
-            <SectionTitle title={'Обо мне'}/>
+            <SectionTitle title={'Обо мне'} id={''}/>
             <SC.AboutMeTextWrapper>
-                <SC.Line></SC.Line>
+                <SC.Line/>
                 <SC.AboutMeText>
                     Я являюсь опытным фронтенд-разработчиком с более чем годом практического опыта в создании SPA
                     (Single Page Applications) с использованием React, Next.js, Redux и TypeScript. Я обладаю навыками

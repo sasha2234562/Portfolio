@@ -4,11 +4,12 @@ import {CSSProperties, FC} from "react";
 interface ButtonInterface{
     title: string
     style?: CSSProperties
-    clickButton: ()=> void
+    clickButton?: ()=> void
+    type?: "button" | "submit" | "reset"
 }
 
-export const Button: FC<ButtonInterface> = ({title, style, clickButton}) => {
+export const Button: FC<ButtonInterface> = ({title, type, style, clickButton}) => {
     return (
-        <SC.Button style={style} onClick={clickButton}>{title}</SC.Button>
+        <SC.Button type={type ||'button'} style={style} onClick={clickButton}>{title}</SC.Button>
     );
 };
