@@ -12,7 +12,7 @@ interface Interface {
 
 export const ContactWithMe: FC<Interface> = ({openForm, setOpenForm}) => {
     const ref = useRef<ElementRef<'form'>>(null);
-const {watch, register} = useForm()
+const {register} = useForm()
     const clickCloseWindow = () => {
         setOpenForm(false)
         document.body.style.overflow = 'auto'
@@ -36,7 +36,6 @@ const {watch, register} = useForm()
         }
     };
 
-    console.log(watch())
     return (
         <SC.Section openForm={openForm}>
             <SC.FormContainer openForm={openForm}>

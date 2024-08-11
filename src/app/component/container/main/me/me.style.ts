@@ -28,3 +28,12 @@ export const Name = styled.h2`
 export const Avatar = styled.img`
     width: 416px;
 `;
+export const MainTitle = styled.h1`
+    color: var(--color-light);
+    font-family: Tinos, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0;
+    text-align: left;
+`;
